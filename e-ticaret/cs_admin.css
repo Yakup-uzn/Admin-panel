@@ -1,0 +1,251 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #1b1b1b;
+    text-decoration: none;
+}
+
+.sidebar .text {
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+    border-bottom: 0.5px solid white;
+}
+
+nav ul {
+    width: 100%;
+    background-color: #1e1e1e;
+    list-style: none;
+    margin-top: 30px;
+}
+
+nav ul li {
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+    padding-left: 40px; 
+    width: 100%;
+    border-left: 5px solid transparent;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    background-color: #1b1b1b;
+    border-left-color: cyan;
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+nav .oturum {
+    position: absolute;
+    bottom: 0;
+}
+
+nav .oturum a {
+    padding-left: 10px;
+}
+
+nav .oturum a img {
+    margin-right: 20px;
+}
+
+/* Container */
+.container {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+/* Header */
+.header {
+    background-color: #1e1e1e;
+    height: 60px;
+}
+
+.header a {
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.header img {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+/* Master */
+.master {
+    width: calc(100% - 250px);
+    text-align: center;
+    color: black;
+    padding: 30px 40px;
+    margin-top: 50px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.master h1 {
+    font-size: 36px;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+    color: black;
+} 
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    margin: 30px 0px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+/* listele List */
+.listele-list {
+    list-style: none;
+    width: 100%;
+}
+
+.listele {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.listele img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+
+.listele span {
+    line-height: 50px;
+    width: 100%;
+    flex: 1;
+}
+
+.listele .delete-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0px 30px;
+    border-radius: 10%;
+}
+.listele .delete-btn:hover {
+    background-color: gray;
+}    
+@media only screen and (max-width: 768px) {
+    .sidebar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.master {
+    width: calc(100% - 50px);
+}
+}
+
+
+
+
+
+.analiz{
+    margin-left: 250px;
+}
+.rapor {
+    float: left;
+    margin-left: 60px;
+    margin-top: 60px;
+    width: 320px;
+    height: 100px;
+    border-radius: 20px;
+}
+.rapor:hover{
+    filter: brightness(85%);
+}
+.rapor:nth-child(1) {
+    background-color: rgb(45, 102, 139); 
+}
+.rapor:nth-child(2) {
+    background-color: rgb(236, 182, 131); 
+}
+.rapor:nth-child(3) {
+    background-color: rgb(142, 207, 142); 
+}
+.rapor:nth-child(4) {
+    background-color: rgb(214, 121, 121); 
+}
+.rapor p, h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    
+}
